@@ -1,4 +1,4 @@
-import "./App.css";
+chimport "./App.css";
 import { getMovieList, searchMovie } from "./api";
 import { useEffect, useState } from "react";
 
@@ -37,7 +37,7 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Nazar Movie</h1>
+        <h1>Search Movie</h1>
         <input
           placeholder="Cari film kesayangan..."
           className="Movie-search"
