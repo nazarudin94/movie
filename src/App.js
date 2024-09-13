@@ -1,4 +1,4 @@
-chimport "./App.css";
+import "./App.css";
 import { getMovieList, searchMovie } from "./api";
 import { useEffect, useState } from "react";
 
@@ -26,12 +26,11 @@ const App = () => {
     });
   };
 
-  const search = async(q) => {
-    if(q.length > 3){
-      const query = await  searchMovie(q)
-     setPopularMovies(query.results)
+  const search = async (q) => {
+    if (q.length > 3) {
+      const query = await searchMovie(q);
+      setPopularMovies(query.results);
     }
-  
   };
   // console.log({ popularMovies });
   return (
